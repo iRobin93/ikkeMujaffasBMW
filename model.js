@@ -1,7 +1,27 @@
 let kulOMeter = 0; 
 let maxKulOMeter = 100; 
 let penger = 100;
-let kompisArray = [];
+let kompisArray = [
+    {
+   
+        Name: "Chicken",
+        moneyIncrease: 20,
+        img: "./images/chicken"
+    },
+    {
+
+        Name: "Johnny Bravo",
+        moneyIncrease: 40,
+        img: "./images/bravo"
+        
+    },
+    {
+        Name: "Ed",
+        moneyIncrease: 40,
+        img: "./images/ed"
+        
+    }
+];
 let kompisObject = {};
 let mekanikerObject = {};
 let mekanikere = [];
