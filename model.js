@@ -22,10 +22,10 @@ let kompisArray = [
         
     }
 ];
-let kompisObject = {};
+let showKompis;
 let mekanikerObject = {};
 let mekanikere = [];
-let popUpMessage = "";        
+let popUpMessage = "";      
         
         //Robin
         setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
