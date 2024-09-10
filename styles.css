@@ -1,0 +1,10 @@
+.barContainer {
+    width: 30vw;
+    height: 3vw;
+    border: solid black;
+}
+
+.barContent {
+    width: 30vw;
+    height: 3vw;
+}
