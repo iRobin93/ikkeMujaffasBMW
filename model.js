@@ -1,5 +1,5 @@
-let kulometer = 0;
-let penger = 0;
+let kulometer;
+let penger;
 let kompisArray = [];
 let kompisObject = {};
 let mekanikerObject = {};
@@ -7,6 +7,14 @@ let mekanikere = [];
 let popUpMessage = "";        
         
         //Robin
-        function getRandomKompis() {
+        setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
 
+        function getRandomKompis() {
+            getRandomNr = Math.floor(Math.random()*kompisArray.length)
+            
+            showKompis = kompisArray[getRandomNr]
+            setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
+            
+
+            hilsKompis(showKompis.Name, showKompis.moneyIncrease);
         }

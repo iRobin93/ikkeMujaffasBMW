@@ -1,7 +1,7 @@
 
 //Robin
-function hilsKompis(int) {
-
+function hilsKompis(kompisName, moneyIncrease) {
+showKompisView(kompisName, moneyIncrease);
 }
 
 
@@ -20,17 +20,7 @@ function buyExpensiveUpgrade() {
   
 
   
-  let kulOMeter = 0;
 
-  function updateKulOMeter(increase) {
-          
-          kulOMeter += increase;
-      
-          if (kulOMeter < 0) kulOMeter = 0;
-          if (kulOMeter > 100) kulOMeter = 100;
-
-  }
-  
 
           //LEO
           function checkWinCon(){
@@ -44,3 +34,35 @@ function buyExpensiveUpgrade() {
           function updateKulometer() {
   
           }
+
+
+
+// kul-o-meter
+let kulOMeter = 0; 
+let maxKulOMeter = 100; 
+
+function updateKulOMeter(increase) {
+    kulOMeter += increase;
+
+    if (kulOMeter < 0) kulOMeter = 0;
+    if (kulOMeter > maxKulOMeter) kulOMeter = maxKulOMeter;
+
+
+let kulOPercentage = (kulOMeter / maxKulOMeter) * 100;
+    
+    document.getElementById('kulOMeterFill').style.width = kulOPercentage + '%';
+    document.getElementById('kulOValue').innerText = kulOMeter + ' points';
+}
+
+
+// penger
+let penger = 100; // Starting money
+
+function updateMoney(amount) {
+    penger += amount;
+
+    if (penger < 0) penger = 0;
+
+    document.getElementById('moneyValue').innerText = penger + ' kr';
+}
+
