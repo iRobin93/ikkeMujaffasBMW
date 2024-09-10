@@ -63,3 +63,11 @@ function updateMoney(amount) {
 
   document.getElementById('moneyValue').innerText = penger + ' kr';
 }
+
+function checkWinCon() {
+  
+  if (kulOMeter >= maxKulOMeter) {
+      alert("Gratulerer! Er du ikke en kul fyr?");
+      
+  }
+}
