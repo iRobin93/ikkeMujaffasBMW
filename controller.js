@@ -1,7 +1,7 @@
 
 //Robin
-function hilsKompis(int) {
-
+function hilsKompis(kompisName, moneyIncrease) {
+showKompisView(kompisName, moneyIncrease);
 }
 
 
