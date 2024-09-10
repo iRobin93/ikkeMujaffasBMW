@@ -1,6 +1,6 @@
 //Robin
-function hilsKompis(kompisName, moneyIncrease) {
-  showKompisView(kompisName, moneyIncrease);
+function hilsKompis(kompisName, moneyIncrease, image) {
+  showKompisView(kompisName, moneyIncrease, image);
 }
 
 //Mariama
@@ -61,4 +61,10 @@ function updateMoney(amount) {
   if (penger < 0) penger = 0;
 
   document.getElementById("moneyValue").innerText = penger + " kr";
+}
+
+function checkWinCon() {
+  if (kulOMeter >= maxKulOMeter) {
+    alert("Gratulerer! Er du ikke en kul fyr?");
+  }
 }
