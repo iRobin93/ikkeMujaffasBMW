@@ -2,9 +2,9 @@ showView();
 function showView() {
     document.getElementById("app").innerHTML = /*HTML*/ `
         <div>Dette er main view</div>
-        <div>${popUpMessage}</div>
-        <div> ${drawBar(kulometer,"blue")}</div>
+        <div>${drawBar(kulOMeter,"blue")}</div>
         <div>${drawCar()}</div>
+        <div>${showKompisView("Ole Petter", 50, "images/chicken.png")}</div>
         <div>${penger}kr</div>
         <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
         <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
@@ -26,6 +26,15 @@ function drawBar(percentageFilled) {
 function drawCar() {
     let html = `
         <div class="car">Dette er bilen btw
+        </div>
+    `;
+    return html;
+}
+
+function showKompisView(kompisName, moneyIncrease, image) {
+    let html = /*HTML*/ `
+        <div>
+        <img src="${image}">
         </div>
     `;
     return html;
