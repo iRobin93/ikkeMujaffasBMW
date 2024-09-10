@@ -31,12 +31,6 @@ function buyCheapUpgrade() {
   }
 }
 
-//LEO
-function checkWinCon() {}
-//LEO
-function updateMoney(int) {}
-//LEO
-function updateKulometer() {}
 
 // Leo Kul-O-Meter
 
