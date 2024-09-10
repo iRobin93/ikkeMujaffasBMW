@@ -4,7 +4,7 @@ let kompisArray = [];
 let kompisObject = {};
 let mekanikerObject = {};
 let mekanikere = [];
-let pupUpMessage = "";        
+let popUpMessage = "";        
         
         //Robin
         function getRandomKompis() {
