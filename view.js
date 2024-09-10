@@ -4,7 +4,7 @@ function showView() {
         <div>Dette er main view</div>
         <div>${drawBar(kulOMeter,"blue")}</div>
         <div>${drawCar()}</div>
-        <div>${showKompisView("Ole Petter", 50, "images/chicken.png")}</div>
+        <div>${getRandomKompis()}</div>
         <div>${penger}kr</div>
         <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
         <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
