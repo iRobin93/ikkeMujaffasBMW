@@ -25,7 +25,7 @@ function drawBar(percentageFilled) {
 
 function drawCar() {
     let html = `
-        <div class="car">
+        <div class="car">Dette er bilen btw
         </div>
     `;
     return html;

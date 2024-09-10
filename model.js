@@ -1,5 +1,6 @@
-let kulometer;
-let penger;
+let kulOMeter = 0; 
+let maxKulOMeter = 100; 
+let penger = 100;
 let kompisArray = [];
 let kompisObject = {};
 let mekanikerObject = {};
@@ -21,8 +22,8 @@ let popUpMessage = "";
 
 // Leo
 // kul-o-meter
-let kulOMeter = 0; 
-let maxKulOMeter = 100; 
+
+
 
 function updateKulOMeter(increase) {
     kulOMeter += increase;
@@ -39,7 +40,7 @@ let kulOPercentage = (kulOMeter / maxKulOMeter) * 100;
 
 
 // penger
-let penger = 100; // Starting money
+ // Starting money
 
 function updateMoney(amount) {
     penger += amount;
