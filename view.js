@@ -4,7 +4,7 @@ function showView() {
         <div>Dette er main view</div>
         <div>${drawBar(kulOMeter,"blue")}</div>
         <div>${drawCar()}</div>
-        <div>${getRandomKompis()}</div>
+        <div id="testDiv"></div>
         <div>${penger}kr</div>
         <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
         <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
@@ -32,10 +32,10 @@ function drawCar() {
 }
 
 function showKompisView(kompisName, moneyIncrease, image) {
-    let html = /*HTML*/ `
+    document.getElementById('testDiv').innerHTML =
+     /*HTML*/ `
         <div>
         <img src="${image}">
         </div>
     `;
-    return html;
 }

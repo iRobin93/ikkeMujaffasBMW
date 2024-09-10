@@ -6,19 +6,19 @@ let kompisArray = [
    
         Name: "Chicken",
         moneyIncrease: 20,
-        img: "./images/chicken"
+        img: "./images/chicken.png"
     },
     {
 
         Name: "Johnny Bravo",
         moneyIncrease: 40,
-        img: "./images/bravo"
+        img: "./images/bravo.png"
         
     },
     {
         Name: "Ed",
         moneyIncrease: 40,
-        img: "./images/ed"
+        img: "./images/ed.png"
         
     }
 ];
@@ -28,7 +28,7 @@ let mekanikere = [];
 let popUpMessage = "";      
         
         //Robin
-        setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
+        setTimeout(getRandomKompis, Math.floor(Math.random()*1500))
 
         function getRandomKompis() {
             getRandomNr = Math.floor(Math.random()*kompisArray.length)
@@ -37,7 +37,7 @@ let popUpMessage = "";
             setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
             
 
-            hilsKompis(showKompis.Name, showKompis.moneyIncrease);
+            hilsKompis(showKompis.Name, showKompis.moneyIncrease, showKompis.img);
         }
 
 // Leo
