@@ -36,33 +36,19 @@ function buyExpensiveUpgrade() {
           }
 
 
+// Leo Kul-O-Meter
+          function updateKulOMeter(increase) {
+            kulOMeter += increase;
+        
+            if (kulOMeter < 0) kulOMeter = 0;
+            if (kulOMeter > maxKulOMeter) kulOMeter = maxKulOMeter;
+        
+        }
 
-// kul-o-meter
-let kulOMeter = 0; 
-let maxKulOMeter = 100; 
-
-function updateKulOMeter(increase) {
-    kulOMeter += increase;
-
-    if (kulOMeter < 0) kulOMeter = 0;
-    if (kulOMeter > maxKulOMeter) kulOMeter = maxKulOMeter;
-
-
-let kulOPercentage = (kulOMeter / maxKulOMeter) * 100;
-    
-    document.getElementById('kulOMeterFill').style.width = kulOPercentage + '%';
-    document.getElementById('kulOValue').innerText = kulOMeter + ' points';
-}
-
-
-// penger
-let penger = 100; // Starting money
-
-function updateMoney(amount) {
-    penger += amount;
-
-    if (penger < 0) penger = 0;
-
-    document.getElementById('moneyValue').innerText = penger + ' kr';
-}
-
+        function updateMoney(amount) {
+          penger += amount;
+      
+          if (penger < 0) penger = 0;
+      
+          document.getElementById('moneyValue').innerText = penger + ' kr';
+      }
