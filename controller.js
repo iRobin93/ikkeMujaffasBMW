@@ -1,8 +1,8 @@
 
 //Robin
-function hilsKompis(kompisName, moneyIncrease) {
-showKompisView(kompisName, moneyIncrease);
-}
+function hilsKompis(kompisName, moneyIncrease, image) {
+    showKompisView(kompisName, moneyIncrease, image);
+    }
 
 
 //Mariama
