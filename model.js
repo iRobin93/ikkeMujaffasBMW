@@ -1,21 +1,10 @@
 let kulometer;
 let penger;
-let kompisArray = [
-    {
-        Name: "Kompis1",
-        moneyIncrease: 20
-    },
-    {
-        Name: "Kompis2",
-        moneyIncrease: 40
-    }
-];
-
-let showKompis;
-
+let kompisArray = [];
+let kompisObject = {};
 let mekanikerObject = {};
 let mekanikere = [];
-let pupUpMessage = "";        
+let popUpMessage = "";        
         
         //Robin
         setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
