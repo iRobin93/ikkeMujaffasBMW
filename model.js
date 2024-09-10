@@ -1,5 +1,5 @@
-let kulometer;
-let penger;
+let kulometer = 0;
+let penger = 0;
 let kompisArray = [];
 let kompisObject = {};
 let mekanikerObject = {};

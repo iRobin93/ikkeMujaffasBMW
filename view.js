@@ -5,6 +5,7 @@ function showView() {
        
         <div> ${drawBar(kulometer,"blue")}</div>
         <div>${drawCar()}</div>
+        <div>${penger}kr</div>
         <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
         <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
         <button onclick="buyCheapUpgrade()">Oppgrader dårlig kvalitet</button>
