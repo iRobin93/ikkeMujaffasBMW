@@ -62,6 +62,7 @@ function buyCheapUpgrade() {
   }
 }
 
+
 //Mariama
 function goToGarage(button) {
   button.style.display = "none";
@@ -81,7 +82,7 @@ function velgMekaniker() {
   let kostnad;
   let kulPoeng;
 
-  if
+  
 }
 
 // Leo Kul-O-Meter
