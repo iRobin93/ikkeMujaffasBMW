@@ -2,6 +2,7 @@ let kulOMeter = 0;
 let maxKulOMeter = 100;
 let penger = 100;
 let hiddenKompisButtons = "hidden";
+let hiddenGarage = "";
 let kompisArray = [
   {
     Name: "Chicken",

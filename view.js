@@ -11,7 +11,7 @@ function showView() {
         <button onclick="checkAnswer('Johnny Bravo')">Hei Johnny</button>
          </div>
       
-        <button onclick="goToGarage(this)">Gå til garasjen</button>
+        <button ${hiddenGarage} onclick="goToGarage()">Gå til garasjen</button>
 
     `;
 }
@@ -43,20 +43,19 @@ function showKompisView() {
 }
 
 //Mariama
-function goToGarage(button) {
-  button.style.display = "none";
-  if (goneToGarage) {
-    return /*html*/ `<button onclick="goToGarage(this)">Gå til garasjen</button>`;
-  }
+function goToGarage() {
+  hiddenGarage = "hidden";
+ 
 
-  goneToGarage = true;
   let meny = document.createElement("div");
+  meny.id = "test"
 
   meny.innerHTML = /*html*/ `
   <h2>Garasje valg</h2>
   <button onclick="buyExpensiveUpgrade('høy')">Oppgrader beste kvalitet</button>
   <button onclick="buyMediumUpgrade('medium')">Oppgrader middels kvalitet</button>
       <button onclick="buyCheapUpgrade('lav')">Oppgrader dårlig kvalitet</button>
+      <button onclick="outOfGarage()">Gå tilbake!</button>
     `;
   document.body.appendChild(meny);
   showView();
