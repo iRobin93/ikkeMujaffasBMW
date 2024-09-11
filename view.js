@@ -53,6 +53,4 @@ function goToGarage() {
     <button onclick="buyCheapUpgrade('lav')">Oppgrader dårlig kvalitet</button>
     <button onclick="outOfGarage()">Gå tilbake!</button>
     `;
-
-  showView();
 }
