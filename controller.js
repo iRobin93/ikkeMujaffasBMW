@@ -53,7 +53,6 @@ function buyMediumUpgrade() {
 function buyCheapUpgrade(kvalitet) {
   const expensiveUpgradeCost = 20;
 
-  let kulPoints;
   if (kvalitet === "lav") {
     costs = 50;
     kulPoints = 10;

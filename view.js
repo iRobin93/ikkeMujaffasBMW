@@ -45,12 +45,17 @@ function showKompisView() {
 //Mariama
 function goToGarage(button) {
   button.style.display = "none";
+  if (goneToGarage) {
+    return /*html*/ `<button onclick="goToGarage(this)">Gå til garasjen</button>`;
+  }
 
+  goneToGarage = true;
   let meny = document.createElement("div");
+
   meny.innerHTML = /*html*/ `
-      <h2>Garasje valg</h2>
-      <button onclick="buyExpensiveUpgrade('høy')">Oppgrader beste kvalitet</button>
-      <button onclick="buyMediumUpgrade('medium')">Oppgrader middels kvalitet</button>
+  <h2>Garasje valg</h2>
+  <button onclick="buyExpensiveUpgrade('høy')">Oppgrader beste kvalitet</button>
+  <button onclick="buyMediumUpgrade('medium')">Oppgrader middels kvalitet</button>
       <button onclick="buyCheapUpgrade('lav')">Oppgrader dårlig kvalitet</button>
     `;
   document.body.appendChild(meny);
