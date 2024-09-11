@@ -1,6 +1,37 @@
 //Robin
-function hilsKompis(kompisName, moneyIncrease, image) {
-  showKompisView(kompisName, moneyIncrease, image);
+function hilsKompis() {
+  showView();
+}
+
+
+function testIfKompisClickedTimer() {
+  if (hiddenKompisButtons == "") {
+    penger -= showKompis.moneyIncrease
+    showKompis = {
+      Name: "",
+      moneyIncrease: 0,
+      img: ""
+    }
+
+    hiddenKompisButtons = "hidden";
+  }
+ showView();
+}
+
+showView();
+function checkAnswer(name) {
+  if (name == showKompis.Name)
+    penger += showKompis.moneyIncrease
+  else
+    penger -= showKompis.moneyIncrease
+  showKompis = {
+    Name: "",
+    moneyIncrease: 0,
+    img: ""
+  }
+
+  hiddenKompisButtons = "hidden";
+  showView();
 }
 
 //Mariama
@@ -31,6 +62,7 @@ function buyCheapUpgrade() {
   }
 }
 
+
 //Mariama
 function goToGarage(button) {
   button.style.display = "none";
@@ -43,6 +75,14 @@ function goToGarage(button) {
     <button onclick="velgMekaniker('lav')">Lada verksted - lav kvalitet</button>
   `;
   document.body.appendChild(meny);
+}
+
+//Mariama
+function velgMekaniker() {
+  let kostnad;
+  let kulPoeng;
+
+  
 }
 
 // Leo Kul-O-Meter
