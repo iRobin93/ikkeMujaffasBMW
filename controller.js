@@ -40,7 +40,7 @@ function buyExpensiveUpgrade() {
     alert("Det koster å være storkar, og det er ikke du!");
   }
 
-  document.getElementById('test').innerHTML = "";
+  document.getElementById("test").innerHTML = "";
   hiddenGarage = "";
   showView();
 }
@@ -52,7 +52,7 @@ function buyMediumUpgrade() {
   } else {
     alert("Du trenger mer penger, prøv noe billigere!");
   }
-  document.getElementById('test').innerHTML = "";
+  document.getElementById("test").innerHTML = "";
   hiddenGarage = "";
   showView();
 }
@@ -71,13 +71,13 @@ function buyCheapUpgrade(kvalitet) {
   } else {
     alert("Skaff det no cash!");
   }
-  document.getElementById('test').innerHTML = "";
+  document.getElementById("test").innerHTML = "";
   hiddenGarage = "";
   showView();
 }
 
-function outOfGarage(){
-  document.getElementById('test').innerHTML = "";
+function outOfGarage() {
+  document.getElementById("test").innerHTML = "";
   hiddenGarage = "";
   showView();
 }

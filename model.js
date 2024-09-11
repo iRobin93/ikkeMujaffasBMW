@@ -26,7 +26,6 @@ let mekanikere = [];
 let popUpMessage = "";
 let kvalitet;
 let kulPoints;
-let goneToGarage = false;
 
 //Robin
 setTimeout(getRandomKompis, Math.floor(Math.random() * 4000 + 5000));
