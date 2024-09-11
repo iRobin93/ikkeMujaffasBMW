@@ -62,6 +62,27 @@ function buyCheapUpgrade() {
   }
 }
 
+//Mariama
+function goToGarage(button) {
+  button.style.display = "none";
+
+  let meny = document.createElement("div");
+  meny.innerHTML = /*html*/ `
+    <h2>Velg deg en mekaniker</h2>
+    <button onclick="velgMekaniker('høy')">Lexus verksted - høy kvalitet</button>
+    <button onclick="velgMekaniker('medium')">Peugeot verksted - medium kvalitet</button>
+    <button onclick="velgMekaniker('lav')">Lada verksted - lav kvalitet</button>
+  `;
+  document.body.appendChild(meny);
+}
+
+//Mariama
+function velgMekaniker() {
+  let kostnad;
+  let kulPoeng;
+
+  if
+}
 
 // Leo Kul-O-Meter
 
