@@ -52,7 +52,7 @@ function buyMediumUpgrade() {
 //Mariama
 function buyCheapUpgrade(kvalitet) {
   const expensiveUpgradeCost = 20;
-  const kvalitet = ["høy", "medium", "lav"];
+
   let kulPoints;
   if (kvalitet === "lav") {
     costs = 50;
