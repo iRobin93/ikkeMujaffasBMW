@@ -50,10 +50,18 @@ function buyMediumUpgrade() {
   }
 }
 //Mariama
-function buyCheapUpgrade() {
+function buyCheapUpgrade(kvalitet) {
   const expensiveUpgradeCost = 20;
-  if (penger >= expensiveUpgradeCost) {
+  const kvalitet = ["høy", "medium", "lav"];
+  let kulPoints;
+  if (kvalitet === "lav") {
+    costs = 50;
+    kulPoints = 10;
+  }
+
+  if (penger >= expensiveUpgradeCost && kvalitet === "lav") {
     penger -= expensiveUpgradeCost;
+    kulOMeter += kulPoints;
   } else {
     alert("Skaff det no cash!");
   }
