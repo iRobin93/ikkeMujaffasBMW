@@ -1,6 +1,7 @@
 let kulOMeter = 0; 
 let maxKulOMeter = 100; 
 let penger = 100;
+let hiddenKompisButtons = "hidden";
 let kompisArray = [
     {
    
@@ -17,12 +18,15 @@ let kompisArray = [
     },
     {
         Name: "Ed",
-        moneyIncrease: 40,
+        moneyIncrease: 30,
         img: "./images/ed.png"
         
     }
 ];
-let showKompis;
+let showKompis = {Name: "",
+    moneyIncrease: 0,
+    img: ""
+}
 let mekanikerObject = {};
 let mekanikere = [];
 let popUpMessage = "";      
@@ -32,12 +36,13 @@ let popUpMessage = "";
 
         function getRandomKompis() {
             getRandomNr = Math.floor(Math.random()*kompisArray.length)
-            
+            hiddenKompisButtons = "";
             showKompis = kompisArray[getRandomNr]
             setTimeout(getRandomKompis, Math.floor(Math.random()*15000+10000))
             
+            setTimeout(testIfKompisClickedTimer, 5000);
 
-            hilsKompis(showKompis.Name, showKompis.moneyIncrease, showKompis.img);
+            hilsKompis();
         }
 
 // Leo

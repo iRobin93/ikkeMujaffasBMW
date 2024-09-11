@@ -1,11 +1,15 @@
-showView();
 function showView() {
     document.getElementById("app").innerHTML = /*HTML*/ `
         <div>Dette er main view</div>
-        <div>${drawBar(kulOMeter,"blue")}</div>
+        <div>${drawBar(kulOMeter, "blue")}</div>
         <div>${drawCar()}</div>
-        <div id="testDiv"></div>
+        <div>${showKompisView()}</div>
         <div>${penger}kr</div>
+        <div ${hiddenKompisButtons}>
+        <button onclick="checkAnswer('Ed')">Hei Ed</button>
+        <button onclick="checkAnswer('Chicken')">Hei Kylling</button>
+        <button onclick="checkAnswer('Johnny Bravo')">Hei Johnny</button>
+         </div>
         <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
         <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
         <button onclick="buyCheapUpgrade()">Oppgrader dårlig kvalitet</button>
@@ -14,7 +18,7 @@ function showView() {
 
 
 function drawBar(percentageFilled) {
- 
+
     let html = /*HTML*/ `
         <div class="barContainer">
             <div class="barContent" style="width: ${percentageFilled}%"></div>
@@ -31,11 +35,12 @@ function drawCar() {
     return html;
 }
 
-function showKompisView(kompisName, moneyIncrease, image) {
-    document.getElementById('testDiv').innerHTML =
+function showKompisView() {
+    let html =
      /*HTML*/ `
         <div>
-        <img src="${image}">
+        <img src="${showKompis.img}">
         </div>
     `;
+    return html;
 }

@@ -1,6 +1,37 @@
 //Robin
-function hilsKompis(kompisName, moneyIncrease, image) {
-  showKompisView(kompisName, moneyIncrease, image);
+function hilsKompis() {
+  showView();
+}
+
+
+function testIfKompisClickedTimer() {
+  if (hiddenKompisButtons == "") {
+    penger -= showKompis.moneyIncrease
+    showKompis = {
+      Name: "",
+      moneyIncrease: 0,
+      img: ""
+    }
+
+    hiddenKompisButtons = "hidden";
+  }
+ showView();
+}
+
+showView();
+function checkAnswer(name) {
+  if (name == showKompis.Name)
+    penger += showKompis.moneyIncrease
+  else
+    penger -= showKompis.moneyIncrease
+  showKompis = {
+    Name: "",
+    moneyIncrease: 0,
+    img: ""
+  }
+
+  hiddenKompisButtons = "hidden";
+  showView();
 }
 
 //Mariama
