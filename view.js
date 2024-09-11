@@ -10,9 +10,7 @@ function showView() {
         <button onclick="checkAnswer('Chicken')">Hei Kylling</button>
         <button onclick="checkAnswer('Johnny Bravo')">Hei Johnny</button>
          </div>
-        <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
-        <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
-        <button onclick="buyCheapUpgrade()">Oppgrader dårlig kvalitet</button>
+      
         <button onclick="goToGarage(this)">Gå til garasjen</button>
 
     `;
@@ -50,10 +48,10 @@ function goToGarage(button) {
 
   let meny = document.createElement("div");
   meny.innerHTML = /*html*/ `
-      <h2>Velg deg en mekaniker</h2>
-      <button onclick="velgMekaniker('høy')">Lexus verksted - medium kvalitet</button>
-      <button onclick="velgMekaniker('medium')">Peugeot verksted - medium kvalitet</button>
-      <button onclick="velgMekaniker('lav')">Lada verksted - lav kvalitet</button>
+      <h2>Garasje valg</h2>
+      <button onclick="buyExpensiveUpgrade('høy')">Oppgrader beste kvalitet</button>
+      <button onclick="buyMediumUpgrade('medium')">Oppgrader middels kvalitet</button>
+      <button onclick="buyCheapUpgrade('lav')">Oppgrader dårlig kvalitet</button>
     `;
   document.body.appendChild(meny);
   showView();
