@@ -1,5 +1,5 @@
 function showView() {
-    document.getElementById("app").innerHTML = /*HTML*/ `
+  document.getElementById("app").innerHTML = /*HTML*/ `
         <div>Dette er main view</div>
         <div>${drawBar(kulOMeter, "blue")}</div>
         <div>${drawCar()}</div>
@@ -13,34 +13,48 @@ function showView() {
         <button onclick="buyExpensiveUpgrade()">Oppgrader beste kvalitet</button>
         <button onclick="buyMediumUpgrade()">Oppgrader middels kvalitet</button>
         <button onclick="buyCheapUpgrade()">Oppgrader dårlig kvalitet</button>
-    `
+        <button onclick="goToGarage(this)">Gå til garasjen</button>
+
+    `;
 }
 
-
 function drawBar(percentageFilled) {
-
-    let html = /*HTML*/ `
+  let html = /*HTML*/ `
         <div class="barContainer">
             <div class="barContent" style="width: ${percentageFilled}%"></div>
         </div>
     `;
-    return html;
+  return html;
 }
 
 function drawCar() {
-    let html = `
+  let html = `
         <div class="car">Dette er bilen btw
         </div>
     `;
-    return html;
+  return html;
 }
 
 function showKompisView() {
-    let html =
-     /*HTML*/ `
+  let html = /*HTML*/ `
         <div>
         <img src="${showKompis.img}">
         </div>
     `;
-    return html;
+  return html;
+}
+
+//Mariama
+function goToGarage(button) {
+  button.style.display = "none";
+
+  let meny = document.createElement("div");
+  meny.innerHTML = /*html*/ `
+      <h2>Velg deg en mekaniker</h2>
+      <button onclick="velgMekaniker('høy')">Lexus verksted - medium kvalitet</button>
+      <button onclick="velgMekaniker('medium')">Peugeot verksted - medium kvalitet</button>
+      <button onclick="velgMekaniker('lav')">Lada verksted - lav kvalitet</button>
+    `;
+  document.body.appendChild(meny);
+  showView();
 }
