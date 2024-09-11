@@ -3,32 +3,29 @@ function hilsKompis() {
   showView();
 }
 
-
 function testIfKompisClickedTimer() {
   if (hiddenKompisButtons == "") {
-    penger -= showKompis.moneyIncrease
+    penger -= showKompis.moneyIncrease;
     showKompis = {
       Name: "",
       moneyIncrease: 0,
-      img: ""
-    }
+      img: "",
+    };
 
     hiddenKompisButtons = "hidden";
   }
- showView();
+  showView();
 }
 
 showView();
 function checkAnswer(name) {
-  if (name == showKompis.Name)
-    penger += showKompis.moneyIncrease
-  else
-    penger -= showKompis.moneyIncrease
+  if (name == showKompis.Name) penger += showKompis.moneyIncrease;
+  else penger -= showKompis.moneyIncrease;
   showKompis = {
     Name: "",
     moneyIncrease: 0,
-    img: ""
-  }
+    img: "",
+  };
 
   hiddenKompisButtons = "hidden";
   showView();
@@ -60,29 +57,6 @@ function buyCheapUpgrade() {
   } else {
     alert("Skaff det no cash!");
   }
-}
-
-
-//Mariama
-function goToGarage(button) {
-  button.style.display = "none";
-
-  let meny = document.createElement("div");
-  meny.innerHTML = /*html*/ `
-    <h2>Velg deg en mekaniker</h2>
-    <button onclick="velgMekaniker('høy')">Lexus verksted - høy kvalitet</button>
-    <button onclick="velgMekaniker('medium')">Peugeot verksted - medium kvalitet</button>
-    <button onclick="velgMekaniker('lav')">Lada verksted - lav kvalitet</button>
-  `;
-  document.body.appendChild(meny);
-}
-
-//Mariama
-function velgMekaniker() {
-  let kostnad;
-  let kulPoeng;
-
-  
 }
 
 // Leo Kul-O-Meter
