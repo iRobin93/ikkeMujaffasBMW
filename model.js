@@ -32,7 +32,7 @@ let mekanikere = [];
 let popUpMessage = "";      
         
         //Robin
-        setTimeout(getRandomKompis, Math.floor(Math.random()*1500))
+        setTimeout(getRandomKompis, Math.floor(Math.random()*4000+5000))
 
         function getRandomKompis() {
             getRandomNr = Math.floor(Math.random()*kompisArray.length)
