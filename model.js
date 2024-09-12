@@ -3,20 +3,21 @@ let maxKulOMeter = 100;
 let penger = 100;
 let hiddenKompisButtons = "hidden";
 let hiddenGarage = "";
+let hiddenGarage2 = "hidden";
 let kompisArray = [
   {
     Name: "Chicken",
-    moneyIncrease: 20,
+    moneyIncrease: 80,
     img: "./images/chicken.png",
   },
   {
     Name: "Johnny Bravo",
-    moneyIncrease: 40,
+    moneyIncrease: 90,
     img: "./images/bravo.png",
   },
   {
     Name: "Ed",
-    moneyIncrease: 30,
+    moneyIncrease: 60,
     img: "./images/ed.png",
   },
 ];
@@ -24,8 +25,6 @@ let showKompis = { Name: "", moneyIncrease: 0, img: "" };
 let mekanikerObject = {};
 let mekanikere = [];
 let popUpMessage = "";
-let kvalitet;
-let kulPoints;
 
 //Robin
 setTimeout(getRandomKompis, Math.floor(Math.random() * 4000 + 5000));
@@ -34,7 +33,7 @@ function getRandomKompis() {
   getRandomNr = Math.floor(Math.random() * kompisArray.length);
   hiddenKompisButtons = "";
   showKompis = kompisArray[getRandomNr];
-  setTimeout(getRandomKompis, Math.floor(Math.random() * 15000 + 10000));
+  setTimeout(getRandomKompis, Math.floor(Math.random() * 12000 + 5000));
 
   setTimeout(testIfKompisClickedTimer, 5000);
 

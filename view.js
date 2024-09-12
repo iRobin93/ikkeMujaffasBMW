@@ -12,6 +12,11 @@ function showView() {
          </div>
       
         <button ${hiddenGarage} onclick="goToGarage()">Gå til garasjen</button>
+        <h2 ${hiddenGarage2} >Garasje valg</h2>
+        <button ${hiddenGarage2} onclick="buyExpensiveUpgrade('høy')">Oppgrader beste kvalitet</button>
+        <button ${hiddenGarage2} onclick="buyMediumUpgrade('medium')">Oppgrader middels kvalitet</button>
+        <button ${hiddenGarage2} onclick="buyCheapUpgrade('lav')">Oppgrader dårlig kvalitet</button>
+        <button ${hiddenGarage2} onclick="outOfGarage()">Gå tilbake!</button>
         <div id="garage"></div>
 
     `;
@@ -45,12 +50,6 @@ function showKompisView() {
 
 //Mariama
 function goToGarage() {
-  let meny = document.getElementById("garage");
-  meny.innerHTML = /*html*/ `
-    <h2>Garasje valg</h2>
-    <button onclick="buyExpensiveUpgrade('høy')">Oppgrader beste kvalitet</button>
-    <button onclick="buyMediumUpgrade('medium')">Oppgrader middels kvalitet</button>
-    <button onclick="buyCheapUpgrade('lav')">Oppgrader dårlig kvalitet</button>
-    <button onclick="outOfGarage()">Gå tilbake!</button>
-    `;
+  hiddenGarage2 = "";
+  showView();
 }
